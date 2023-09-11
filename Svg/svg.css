@@ -1,0 +1,57 @@
+/* Make the C Layer zoom down */
+#W {
+    animation: wSlide 2.0s;
+    transform-origin: top;
+  }
+  
+  @keyframes wSlide {
+    0%   { transform: scale(0.05)}
+    100% { transform: translate(1.0);}
+
+  }
+  
+  /* Make the T Layer spin around */
+#IS {
+    animation: iSpin 2.0s;
+    transform-origin: center;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes iSpin {
+    0%   { transform: rotate(360deg);}
+    100% { transform: rotate(0deg);}
+  }
+
+  #U {
+    animation: uSlide 2.0s;
+    transform-origin: bottom;
+   
+  }
+  
+  @keyframes uSlide {
+    0%   { transform: scale(0.05);}
+    100% { transform: scale(1.0);}
+  }
+
+  #SVGCTK {
+    width: 200px;
+    scale: 7;
+    display: block;
+    transition: transform .25s linear;
+    transform-origin:  left top;
+  }
+
+  
+  @keyframes slideInRight {
+    from{
+        transform: translateX(300px)
+    }
+    to{
+        transform: translateX(0)
+    }
+    
+  }
+  .slideInRight{
+    animation: slideInRight 3s  ease-in ;
+  }
+  
