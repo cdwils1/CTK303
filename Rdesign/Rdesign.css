@@ -1,0 +1,203 @@
+
+
+#wrapper {
+    width: auto;
+    border: 4px;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: black;
+    
+   
+}
+header {
+    grid-column: span 12;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+h1{
+    color: blueviolet;
+    text-align: center;
+    font-family: 'Tilt Prism', cursive;
+    animation: slideInLeft 3s ease-in;
+    
+}
+h2{
+    color: blueviolet;
+    text-align: center;
+    font-family: 'Tilt Prism', cursive;
+}
+nav {
+    grid-column: span 12;
+    font-weight: normal;
+    font-family: 'Tilt Prism', cursive;
+    font-style: normal;
+    background-color:black;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+nav ul {
+    padding: 5px;
+    margin: 0px;
+    
+}
+
+nav li {
+    font-weight: bold;
+    color: black;
+    background-color: blueviolet;
+    width: 313px;
+    height: 45px;
+    display: inline-block;
+    box-sizing:border-box;
+    line-height: 40px;
+    border-radius: 15px;
+    
+}
+
+nav li :hover {
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px purple;
+}
+
+nav li a {
+    color:black;
+    display: block;
+    text-decoration: none;
+    padding-left: 1em;
+    border-radius: 15px;
+    
+    transition: background-color .5s, width 1.0s, color 1.0s;
+
+}
+
+#Photos{
+    grid-column-start: span 12;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#Photos img{
+    height: 300px;
+    width: 200px;
+    transition: all 1s;
+
+}
+#Photos:hover img{
+    transform: rotate(360deg);
+}
+#gridBottom {
+    grid-column-start: span 12;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    text-align: center;
+}
+
+main h2{
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Tilt Prism', cursive;
+
+}
+
+
+footer {
+    grid-column: span 12;
+    font-weight: normal;
+    font-family: Helvetica;
+    font-style: normal;
+    background-color:transparent;
+    border-top: 3px solid blueviolet;
+    color: white;
+    margin: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+#p1Carousel {
+    grid-column:span 12;
+    margin-bottom: 24px;
+    border: 2px solid black;
+  }
+  
+  #p1Carousel img{
+    width: 100%;
+  }
+  
+  #p1Carousel .f-carousel__slide {
+    text-align: center;
+    padding: 24px;
+    background: gray;
+  }
+  
+#contacts{
+    grid-column-start: span 4;
+    text-align: center;
+    margin-bottom: 24px;
+    border: 2px solid black;
+    color: white;
+}
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+
+    }
+    to{
+        transform: translateX(0);
+    }
+  }
+  .slideInLeft{
+    animation: slideInLeft 3s  ease-in ;
+  }
+
+ /* Media Query */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; 
+    }
+    article {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+    
+    .two-column-list {
+        columns: 1; 
+        column-gap: 0; 
+    }
+    header {
+        font-size: 13px;
+    }
+}
+
+/* Phone */
+@media all and (min-width: 20rem){
+    h1 { color:white; padding: auto; }
+    #wrapper { min-width: auto; margin: 0rem auto; background-color: blueviolet; font-weight: bold; }
+    #gridBottom{color:white;}
+      
+}
+
+
+
+/* Computer */
+  @media all and (min-width: 60rem){
+    h1 { color:blueviolet; padding: auto; }
+    #wrapper{ max-width: 960px; margin: 0rem auto; background-color: black; box-shadow: 10px 10px 10px white }
+    h2{color: white;}
+  }  
+  
+
+  
